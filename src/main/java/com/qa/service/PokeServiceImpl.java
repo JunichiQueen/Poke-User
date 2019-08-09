@@ -91,7 +91,6 @@ public class PokeServiceImpl implements PokeService{
 
 	@Override
 	public ResponseEntity<Object> createUser(User user) {
-		
 		repository.save(user);
 		return ResponseEntity.ok().build();
 	}
